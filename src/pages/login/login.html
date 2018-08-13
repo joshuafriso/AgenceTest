@@ -1,0 +1,23 @@
+<ion-content>
+  <div padding class="page">
+  
+    <div class="title">
+      <h4>Agence Demo Application</h4>
+    </div>
+    <div class="form">
+      <form (ngSubmit)="doLogin()">
+        <ion-item>
+          <ion-input type="text" [(ngModel)]="userName" name="userName" placeholder="Username"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-input type="password" [(ngModel)]="password" name="password" placeholder="Password"></ion-input>
+        </ion-item>
+      
+        <button ion-button type="submit" color="primary" block>Sign in</button>
+        
+      </form>
+      <button ion-button clear (click)="goRegister()">Don't have account? Sign up now!</button>
+    </div>
+  </div>
+</ion-content>

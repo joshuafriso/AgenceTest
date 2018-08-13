@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons left>
+      <button ion-button clear (click)="logout()">Logout</button>
+    </ion-buttons>
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+
+      <button ion-item (click)="goDraw()">
+        Draw Something Awesome
+      </button>  
+    
+      <button ion-item (click)="goUsers()">
+        List Users
+      </button>  
+    
+  </ion-list>
+</ion-content>

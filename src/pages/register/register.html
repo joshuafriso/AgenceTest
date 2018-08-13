@@ -1,0 +1,29 @@
+<ion-content>
+  <div padding class="page">
+
+      <div class="title">
+        <h3>Sign up</h3>
+      </div>
+
+      <div class="form">
+      <form (ngSubmit)="doLogin()">
+
+        <ion-item>
+          <ion-input type="text" [(ngModel)]="userName" name="userName" placeholder="Username"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-input type="password" [(ngModel)]="password" name="password" placeholder="Password"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-input type="password" [(ngModel)]="confirmPwd" name="confirmPwd" placeholder="Confirm password"></ion-input>
+        </ion-item>
+      
+        <button ion-button type="submit" color="primary" block>Register</button>
+        
+        </form>
+      <button ion-button clear (click)="goLogin()">I already have a account, Sign in now!</button>
+    </div>
+  </div>
+</ion-content>

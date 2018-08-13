@@ -1,0 +1,16 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Registered Users</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list *ngFor="let user of users">
+    <ion-item>
+      <ion-row><p>{{user.userName}}</p></ion-row>
+    </ion-item>
+  </ion-list>
+</ion-content>
